@@ -1,0 +1,4 @@
+- the SONG (us snapsave to download)
+- trim the audio to the best part ( https://audiotrimmer.com/# )
+- separate the audio and video (https://vocalremover.org/)
+- get the intro from AI (https://www.naturalreaders.com/online/) 
