@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+  <head>
+    <style>
+      table, thead, tr, td {
+        border: 1px solid black;
+      }
+
+      label {
+        display: inline-block;
+        width: 190px;
+        text-align: right;
+      }
+    </style>
+
+    <script>
+      //Array
+      var athletes=[[1,"Tunbridge Academy","Mobin Trecher",12.1], 
+                    [2,"Tunbridge Academy","Meolody Carson",12.5],
+                    [3, "St Thomas Secondary","Cornelia Stocia",14.7],
+                    [4,"Wellside Secondary","Bogdan Moise",12.7]]
+    </script>
+  </head>
+  <body>
+    <h1>100m Sprint Results</h1>
+    <table id="schoolTable">
+      <thead>
+        <tr>
+          <td>Athlete Number</td>
+          <td>School</td>
+          <td>Athlete</td>
+          <td>Time</td>
+        </tr>
+      </thead>
+      <tbody>
+      <script>
+        for (var row = 0; row < athletes.length; row ++) 
+        {
+          document.write("<tr>")
+          // athleteNumber is written to the table
+          document.write("<td>"+ athletes[row][0] + "</td>") 
+          // school is written to the table
+          document.write("<td>"+ athletes[row][1] + "</td>") 
+
+          // Add your code to write the athelete's name to the table
+          
+
+          // time is written to the table
+          document.write("<td>"+ athletes[row][3] + "</td>") 
+          document.write("</tr>")
+        }
+      </script>
+      </tbody>
+    </table>
+
+    <form id="raceIno">
+      <p><label for="fastest">Fastest Time:</label>
+      <input type="text" id="fastest" size="3" disabled></p>
+      <p><label for="athleteNum">Athlete Number:</label>
+      <input type="text" id="athleteNum" size="3" disabled></p>
+      <p><label for="athleteName">Athlete:</label>
+      <input type="text" id="athleteName" size="30" disabled></p>
+      <p><label for=athleteSchool">School:</label>
+      <input type="text" id="athleteSchool" size="30" disabled></p>   
+    </form> 
+    
+    <script>
+      var numRunners = 0
+      var fastestTime = 100
+      var athleteNumber = 0
+      var school = ""
+      var athlete = ""
+      var raceTime = 0
+      numRunners = athletes.length
+
+      // Add your code here to find the information for the fastest athlete
+
+      document.getElementById("fastest").value = fastestTime
+      // Add your code here to display the rest of the information for the fastest athlete
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <head>
+    <script>
+      function hideCombos()
+        {
+          document.getElementById("trackEvents").style.display = "none"
+          document.getElementById("fieldEvents").style.display = "none"
+        }
+
+      function getEvent()
+      {
+        
+        var event = document.getElementById("eventType");
+        var optionChosen = event.options[event.selectedIndex].text;
+
+        // Add your code here to dispay only the relevant combo box based on the event type selected
+        
+
+
+
+
+
+
+
+
+        
+      }
+      
+        
+    </script>
+  </head>
+  <body onload="hideCombos()">
+      <!--combo box for the event type-->
+      <label for="eventType">Events</label>
+      <select id="eventType" onchange="getEvent(this)">
+        <option value="track">Select the event type</option>
+        <option value="track">Track</option>
+        <option value="field">Field</option>
+      </select>
+
+      <div id="trackEvents">
+        <!--combo box for the track events-->
+        <p><label for="tracktList">Track</label>
+        <select id="trackList">
+          <option value="track">100m sprint</option>
+          <option value="field">800m relay</option>
+        </select>
+        </p>
+      </div>
+
+      <div id="fieldEvents">
+        <!--combo box for the field events-->
+        <p><label for="fieldList">Field</label>
+        <select id="fieldList">
+          <option value="Discus">Discus</option>
+          <option value="Javelin">Javelin</option>
+        </select>
+        </p>
+      </div>
+  </body>
+</html>

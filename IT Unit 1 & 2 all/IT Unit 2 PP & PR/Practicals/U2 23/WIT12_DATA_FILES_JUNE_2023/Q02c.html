@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <style> 
+            p {
+                text-align: center;
+            }
+            #shape {
+                width: 50px;
+                height: 50px;
+               
+                /* Add your code to centre the shape across the page */
+               margin: auto;
+
+                /* Add your code to set the colours of the shape */
+                background-image: linear-gradient(purple, blue, orange);
+
+                /* Add your code to set the transition time to 3 seconds */
+               transition: 3s;
+                
+                transition-timing-function: cubic-bezier(0.1,1,0.6,0.3);
+            }
+            #shape:hover {
+                width:300px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hover over the square to see the shape change to a rectangle.</p>
+        <div id="shape"></div>
+    </body>
+</html>

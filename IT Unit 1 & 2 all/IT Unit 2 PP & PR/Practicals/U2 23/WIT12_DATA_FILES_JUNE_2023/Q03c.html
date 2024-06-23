@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkNumbers()
+            {
+                var num1 = document.getElementById("inputNum1").value
+                var num2 = document.getElementById("inputNum2").value
+                var message = ""
+                 
+                if (/* Add your code here */num1 == num2) {
+                    message = "The numbers are the same."
+                } else if (/* Add your code here */ num1 > num2) {
+                    message = num1 + " is higher than " + num2
+                } else {
+                    message = num1 + " is lower than " + num2
+                }
+                // Add your code here to display the message
+                alert(message)
+            }  
+        </script>
+    </head>
+    <body>
+        <form id="numberGame">
+            <p><label for="num1">Input first number:</label>
+               <input type="number" id="inputNum1"></p>
+            <p><label for "num2">Input second number:</label>
+                <input type="number" id="inputNum2"></p>
+                <p id="outputMessage"></p> 
+            <input type="submit" value="Submit" onclick="checkNumbers()"> 
+        </form>
+    </body>
+</html>

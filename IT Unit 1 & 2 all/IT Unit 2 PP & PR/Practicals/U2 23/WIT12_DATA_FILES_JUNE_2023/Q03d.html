@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+    <head>      
+        <script>
+            var nameArray = [["Sanderson","Eli"],
+                             ["Spencer","Mark"]]
+
+            function addName()
+            {
+                lName = document.getElementById("lastName").value
+
+                // Add your code to store the first name value
+                fName = document.getElementById("firstName").value
+
+                // Add your code to add the lastname and firstname to the array
+               nameArray.push([lName, fName])
+            }
+            
+            function displayNames()
+            {
+                nameArrayLength = nameArray.length
+                for (count = 0; count < nameArrayLength; count++){
+                    // Add your code to display the lastname followed by the first name
+                    alert(nameArray[count][0] + " " + nameArray[count][1])
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form id="names">
+            <p><label for="lastName">Last name:</label>
+            <input type="text" id="lastName"></p>
+            <p><label for="firstName">First name:</label>
+            <input type="text" id="firstName"></p>
+
+            <!--Amend the code to call the addName function-->
+            <input type="button" id="btnAdd" value="Add" onclick="addName()"></input>
+            
+            <input type="button" id="btnDisplay" value="Display" onclick="displayNames()"></input>
+        </form>
+    </body>
+</html>
